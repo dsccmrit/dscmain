@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -29,6 +30,9 @@
 
   <title>DSC - CMR Institute of Technology</title>
 
+  <!-- Carouse -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet" type="text/css">
+
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -38,6 +42,10 @@
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
+    " rel="stylesheet">
+
+
 
   <!-- Libraries CSS Files -->
 
@@ -305,14 +313,51 @@
         </div>
   </section>
 
-  <section class="page-section bg-blue bg-image text-white" id="events">
+  <section class="page-section bg-blue bg-image text-white" id="events" >
     <div class="container text-center">
       <p><i class="fa fa-4x fa-bullhorn" aria-hidden="true"></i></p>
       <h2 class="mb-4">Upcoming Events</h2>
       <hr class="divider light my-4">
-      <h3 class="mb-4">Stay tuned!</h3>
-      <p class="mb-4">We're working hard to bring some great events to you...</p>
-      <a class="btn btn-light btn-xl" target="_blank" href="join/index.html">Register Now</a>
+
+      
+      <!-- <p class="mb-4"></p> -->
+
+      <!-- Flickity HTML init -->
+      <div id="carousel-example" class="carousel slide" data-ride="carousel" style="width:100%;">
+       
+      
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="#"><img src="Ev1.jpeg" style="width: 100%;" /></a>
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+          <div class="item">
+            <a href="#"><img src="Ev2.jpeg" style="width: 100%;" /></a>
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+          <div class="item">
+            <a href="#"><img src="Ev3.jpeg" style="width: 100%;"/></a>
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+      
+        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      <br>
+      <p>Join us live for the event on 26th September</p>
+      <a class="btn btn-light btn-xl" target="_blank" href="https://www.youtube.com/watch?v=tOvrJkU3io8&feature=youtu.be">Join Us Live</a><br><br>
+      <a class="btn btn-light btn-xl" target="_blank" href="join/register.html">Register</a>
     </div>
   </section>
 
@@ -333,6 +378,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -487,7 +534,7 @@
        
     }
 
-
+// 
   background.rn = function(from, to, arr) {
     if(arr){
             return Math.random() * (to - from + 1) + from;
